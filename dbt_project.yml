@@ -36,7 +36,7 @@ models:
     end_models:
       materialized: table
     staging:
-      +schema: staging
+      schema: staging
       materialized: table
 seeds:
-  +schema: seeds
+  schema: seeds
