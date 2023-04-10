@@ -32,10 +32,11 @@ clean-targets:         # directories to be removed by `dbt clean`
 # as tables. These settings can be overridden in the individual model files
 # using the `{{ config(...) }}` macro.
 models:
-  end_models:
-    materialized: table
-  staging:
-    +schema: staging
-    materialized: table
-seeds:
-  +schema: seeds
+  C01_dbt_analytics:
+    end_models:
+      materialized: table
+    staging:
+      +schema: staging
+      materialized: table
+  seeds:
+    +schema: seeds
