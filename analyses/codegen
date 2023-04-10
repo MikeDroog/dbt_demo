@@ -1,3 +1,7 @@
 generate_model_yaml:
 
 dbt run-operation generate_model_yaml --args '{"model_names": ["customers_complete"]}'
+
+generata source yaml :
+
+dbt run-operation generate_source --args '{"schema_name": "TPCH_SF1", "database_name": "SNOWFLAKE_SAMPLE_DATA"}'
