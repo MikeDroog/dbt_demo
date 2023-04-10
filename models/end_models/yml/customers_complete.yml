@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: customers_complete
+    description: combination of the cleaned intermediate tables male and female
+    columns:
+      - name: name
+        description: Customer full name
+        tests:
+          - unique
+      - name: email
+      - name: gender
+        tests:
+          - accepted_values:
+              values: ['Male', 'Female']
