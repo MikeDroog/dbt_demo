@@ -1,4 +1,4 @@
-{% snapshot orders %}
+{% snapshot snapshot_orders %}
 
 {%set new_schema = target.schema + '_snapshot'%}
 
@@ -13,6 +13,6 @@
     )
 }}
 
-select * from DEMO_RAW,{{target.schema}}.orders
+select * from DEMO_RAW.public.orders
 
 {% endsnapshot %}
