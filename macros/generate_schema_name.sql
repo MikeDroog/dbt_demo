@@ -8,7 +8,7 @@
 
     {%- else -%}
 
-        {%- if target.name.startswith('dev') -%}
+        {%- if target.name.startswith('demo_dev') -%}
 
             {{ default_schema }}_{{ custom_schema_name | trim }}
 

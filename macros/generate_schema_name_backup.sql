@@ -1,7 +1,7 @@
 -- By default, custom schema name will be combined with target.schema name
 -- Override this schema to based on requirements
 
-{% macro generate_schema_name(custom_schema_name, node) -%}
+{% macro generate_schema_name_backup(custom_schema_name, node) -%}
     {%- set default_schema = target.schema -%}
     
     {%- if custom_schema_name is none -%}
