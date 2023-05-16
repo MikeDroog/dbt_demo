@@ -1,9 +1,3 @@
-{{
-  config(
-    post_hook=("alter table {{ this }} add row access policy public.demo_policy on (GENDER)")
-  )
-}}
-
 WITH male_customers AS (
     SELECT * 
     FROM {{ ref('clean_male_customers') }}
