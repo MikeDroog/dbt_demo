@@ -12,4 +12,5 @@ models:
       - name: gender
         tests:
           - accepted_values:
-              values: ['Male', 'Female']
+              values: ['Male', 'Femal']
+              store_failures: true  # always store failures
